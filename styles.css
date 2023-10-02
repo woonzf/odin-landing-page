@@ -1,13 +1,16 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
 header {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    padding: 0 100px;
+    padding: 0 200px;
 }
 
 .header-top {
@@ -33,25 +36,22 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-a, .secondary-text {
-    font-size: 18px;
+    font-size: 16px;
     color: #E5E7EB;
-}
-
-button {
-    background-color: #3882F6;
-    color: white;
-    border: 1px #3882F6;
-    border-radius: 5px;
-    padding: 5px 20px;
 }
 
 .header-bottom {
     display: flex;
+    justify-content: space-between;
     gap: 50px;
-    padding: 100px;
+    padding: 100px 10px;
+}
+
+.header-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-text {
@@ -61,14 +61,103 @@ button {
 }
 
 .secondary-text {
-    margin: 10px 0;
+    color: #F9FAF8;
+    margin-bottom: 10px;
 }
 
-.placeholder {
+button {
+    background-color: #3882F6;
     color: white;
-    background-color: lightslategray;
-    width: 700px;
+    border: 1px #3882F6;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header-image {
+    flex: 1;
     display: flex;
-    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 30px;
+    margin: 0 300px 100px 300px;
+}
+
+.info-image {
+    flex: 1;
+}
+
+.info-text {
+    text-align: center;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 375px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-author {
+    text-align: end;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.call {
+    background-color: #3882F6;
+    margin: 75px 200px;
+    padding: 50px 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.call-text {
+    color: white;
+}
+
+#text1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.call-button {
+    display: flex;
+    align-self: center;
+}
+
+#button2 {
+    border: 2px solid white;
+}
+
+footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
