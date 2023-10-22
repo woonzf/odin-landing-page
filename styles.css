@@ -159,5 +159,17 @@ footer {
     background-color: #1F2937;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
+}
+
+.gh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#gh-logo {
+    height: 25px;
 }
